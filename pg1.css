@@ -1,11 +1,22 @@
+/* Fonte Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Alteração geral do css do site "*" */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
+   font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-family: "Neue Montreal";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #000;
 }
 
 img {
@@ -54,12 +65,25 @@ footer {
     z-index: -1;
 }
 
-h1 {
-    width: 100%;
-    color: #c0c0c0;
-    font-size: 15vw;
-    font-weight: 400;
-    letter-spacing: -0.05em;
+h2 {
+    color: #333;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* Animações e códigos responsáveis por alterar a cor da letra */
+h2:hover {
+    color: #fff;
+}
+
+h2:nth-child(1):hover {
+    text-shadow: 
+        0 0 10px #0ef,
+        0 0 20px #0ef,
+        0 0 40px #0ef;
 }
 
 p {
