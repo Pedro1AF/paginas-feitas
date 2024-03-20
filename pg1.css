@@ -77,6 +77,7 @@ h2 {
     text-transform: uppercase;
     cursor: pointer;
     transition: .5s;
+      z-index: -1;
 }
 
 /* Animações e códigos responsáveis por alterar a cor da letra */
