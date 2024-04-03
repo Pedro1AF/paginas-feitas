@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay muted loop id="video-background">
-            <source src="https://photos.google.com/photo/AF1QipOvFVeLORyLdVf-wt9Xgt7MdDoxs-xQIdWAEStg" type="video/mp4">
-        </video>
+
+    <iframe autoplay muted loop id="background-video"
+     src="video.mp4">
+    </iframe>
+
         <div class="login-box">
             <h2>Login</h2>
-            <form id="login-form">
+            <form id="login-form" action="pg1.html" method="GET">
                 <div class="input-group">
                     <label for="name">Nome:</label>
                     <input type="text" id="name" required placeholder="Cirilo da marola">
@@ -27,12 +28,11 @@
                     <input type="tel" id="phone" required placeholder="(99) 99999-9999">
                 </div>
                 <div>
-                <a type="submit" href="pg1.html">Entrar</a>
+                    <button type="submit">Entrar</button>
             </div>
             </form>
         </div>
-    </div>
 
-    <script src="login.js"></script>
+        <script src="login.js"></script>
 </body>
 </html>
